@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+       <meta charset="utf-8" />
+        <link rel="shortcut icon" href="images\png001-64x64.png" type="images/png">
+        <title>Квест для любимой</title>
+<style> 
+    body{
+        
+    }    
+     @font-face {font-family: Pudelina; src: url(fonts/Pudelina.ttf);}  
+    
+    #list1{
+          width: 600px;
+          height: 550px;
+          margin: 0 auto; 
+          background: url(images/Serdce_grani_600-550_PNG.png) 100% 100% no-repeat;
+          background-size: cover;
+          } 
+    #text{ 
+        text-align:  center;
+        padding: 160px;
+	    font: bold italic 120px Pudelina;  
+        color: #e30000; 
+        padding-left: 120px;
+        line-height: 0.8;
+        text-shadow: #fff 2px 2px 3px, #fff -2px -2px 3px, 
+                 #fff -2px 2px 3px, #fff 2px -2px 3px;
+        }
+.otstip1{
+        width: 550px;
+          height: 10px;
+          margin: 0 auto; 
+        }
+</style>
+        <script>      
+window.onload=function(){
+var rand_c1=Math.floor(Math.random()*256);
+var rand_c2=Math.floor(Math.random()*256);
+var rand_c3=Math.floor(Math.random()*256);
+ 
+function set_background_color(c1,c2,c3)
+{
+   document.body.style.backgroundColor = "rgb(" + c1 + "," + c2 +"," + c3 +")";
+}
+set_background_color(rand_c1,rand_c2,rand_c3);
+}
+        </script>  
+</head>
+<body>
+    <div class="otstip1"></div>
+     <div id="list1">
+             <div id="text">Щипаю за попку</div>
+     </div>
+</body>
+</html>
